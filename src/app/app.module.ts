@@ -13,6 +13,8 @@ import { ShapeSComponent } from './components/shape-s/shape-s.component';
 import { ShapeTComponent } from './components/shape-t/shape-t.component';
 import { SnakeComponent } from './pages/snake/snake.component';
 import { PairsComponent } from './pages/pairs/pairs.component';
+import { MainComponent } from './pages/main/main.component';
+import { TetrisFieldComponent } from './components/tetris-field/tetris-field.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { PairsComponent } from './pages/pairs/pairs.component';
     ShapeSComponent,
     ShapeTComponent,
     SnakeComponent,
-    PairsComponent
+    PairsComponent,
+    MainComponent,
+    TetrisFieldComponent
   ],
   imports: [
     BrowserModule,
