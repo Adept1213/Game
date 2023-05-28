@@ -15,6 +15,8 @@ import { SnakeComponent } from './pages/snake/snake.component';
 import { PairsComponent } from './pages/pairs/pairs.component';
 import { MainComponent } from './pages/main/main.component';
 import { TetrisFieldComponent } from './components/tetris-field/tetris-field.component';
+import { BlockComponent } from './components/block/block.component';
+import { FormatShapePipe } from './pipes/format-shape.pipe';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { TetrisFieldComponent } from './components/tetris-field/tetris-field.com
     SnakeComponent,
     PairsComponent,
     MainComponent,
-    TetrisFieldComponent
+    TetrisFieldComponent,
+    BlockComponent,
+    FormatShapePipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

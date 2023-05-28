@@ -8,9 +8,9 @@ describe('TetrisComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TetrisComponent ]
+      declarations: [ TetrisComponent ],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TetrisComponent);
     component = fixture.componentInstance;

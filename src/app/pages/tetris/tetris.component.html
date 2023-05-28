@@ -1,3 +1,10 @@
 <div class="tetris-main">
-  <app-tetris-field></app-tetris-field>
+  <app-tetris-field>
+    <app-shape-i [shape]="shape | formatShape" ></app-shape-i>
+    <hr *ngFor="let item of arrHrHorizontal" class="hr"/>
+    <hr
+      *ngFor="let item of arrHrVertical; let i = index"
+      class="hrVerical" [ngStyle]="{'left': -571 + (i + 1) * 30 + 'px'}"
+    />
+  </app-tetris-field>
 </div>
